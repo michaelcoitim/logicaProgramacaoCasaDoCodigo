@@ -1,0 +1,28 @@
+<h3>Álcool ou Gasolina?</h3>
+<script>
+    var tanque = 40 ;
+    var caminhoGastoGasolina = 480;
+    var caminhoComAlcool = 300;
+    var consumoGas = caminhoGastoGasolina / tanque;
+    var consumoAl = caminhoComAlcool / tanque;
+    var arendoda = 0.314178473;
+    var precoGas = 2.9;
+    var precoAlc = 2.4;
+
+
+    document.write("O Consumo gasto com gasolina foi de : "+consumoGas+" litros/km <br>");
+    document.write("O Consumo gasto com alcool foi de : "+consumoAl+" litros/km <br>");
+    document.write("O Consumo gasto aredondado com alcool foi de : "+Math.round(consumoAl)+" litros/km <br>");
+    
+    
+    document.write(arendoda.toFixed(2)+"<br>");
+
+    // desafio 6 capitolo 2 gasolina 2,9 alcool 2,4
+    var mediaGas =precoGas / consumoGas ;
+    var mediaAlc =precoAlc / consumoAl ;
+    document.write("preço por quilometro gasolina "+mediaGas.toFixed(2)+" R$ <br>");
+    document.write("preço por quilometro "+mediaAlc.toFixed(2)+ " R$ (em 2012!)<br>") ;
+
+
+
+</script>
