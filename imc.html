@@ -1,0 +1,20 @@
+<script>
+        //função que pula linha 
+        var pulaLinha = function() {
+        document.write("<br>");
+        document.write("<hr>");
+        document.write("<br>");
+    };
+
+    // função mostra uma frase em letras maiuscula
+    var mostra = function(frase){
+        document.write("<big>"+frase+"</big>");
+        pulaLinha();    
+    }
+    
+    var altura =1.75;
+    var peso=91;
+    var imc = peso / (altura * altura);
+
+    mostra("Meu imc é : "+imc)
+</script>
