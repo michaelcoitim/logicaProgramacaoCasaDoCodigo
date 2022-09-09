@@ -1,7 +1,7 @@
 <script>
         //função que pula linha 
         var pulaLinha = function() {
-        document.write("<br>");
+        //document.write("<br>");
         document.write("<hr>");
         document.write("<br>");
     };
@@ -18,7 +18,9 @@
     mostra("Meu imc é : "+imc)*/
 
     var calculaIMC = function(altura ,peso){
+ 
         var imc = peso / (altura * altura);
+        pulaLinha();
         mostra("o Seu imc é: "+imc.toFixed(2));
         pulaLinha();
         
