@@ -12,9 +12,23 @@
         pulaLinha();    
     }
     
-    var altura =1.75;
+/* var altura =1.75;
     var peso=91;
     var imc = peso / (altura * altura);
+    mostra("Meu imc é : "+imc)*/
 
-    mostra("Meu imc é : "+imc)
+    var calculaIMC = function(altura ,peso){
+        var imc = peso / (altura * altura);
+        mostra("o Seu imc é: "+imc);
+        pulaLinha();
+        
+
+    }
+
+    var pesoPrimo=83;
+    var alturaPrimo=1.76;
+
+    calculaIMC(alturaPrimo,pesoPrimo);
+
+
 </script>
