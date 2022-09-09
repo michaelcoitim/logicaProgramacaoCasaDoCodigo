@@ -20,17 +20,18 @@
     var calculaIMC = function(altura ,peso){
  
         var imc = peso / (altura * altura);
-        pulaLinha();
-        mostra("o Seu imc é: "+imc.toFixed(2));
-        pulaLinha();
-        
+        return imc.toFixed(2);
+
 
     }
 
     var pesoPrimo=83;
     var alturaPrimo=1.76;
 
-    calculaIMC(alturaPrimo,pesoPrimo);
+    calculaIMCPrimo = calculaIMC(alturaPrimo,pesoPrimo);
+
+    mostra("O  imc do primo é "+calculaIMCPrimo);
+    mostra("Ele ainda está "+(calculaIMCPrimo -18.5)+ " pontos acima do limite da magreza.");
 
 
 </script>
