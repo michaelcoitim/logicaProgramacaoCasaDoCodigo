@@ -18,7 +18,7 @@
     mostra("Meu imc é : "+imc)*/
 
     var calculaIMC = function(altura ,peso){
- 
+
         var imc = peso / (altura * altura);
         return imc.toFixed(2);
 
@@ -32,6 +32,8 @@
 
     mostra("O  imc do primo é "+calculaIMCPrimo);
     mostra("Ele ainda está "+(calculaIMCPrimo -18.5)+ " pontos acima do limite da magreza.");
+    pulaLinha();
+    mostra ("E esta "+ (  30 - calculaIMCPrimo ).toFixed(2)+ " pontos de distante da obecidade")
 
 
 </script>
