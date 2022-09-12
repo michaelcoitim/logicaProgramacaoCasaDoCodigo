@@ -28,11 +28,13 @@
 
     var pesoPrimo=83;
     var alturaPrimo=1.76;
+    var nomeUsuario = prompt("Qual é sue nome");
     var pesoUsuario = prompt("Qual Seu peso? ");
     var alturaUsuario = prompt("Qual sua altura? ");
 
     var imcUsuario = calculaIMC(alturaUsuario, pesoUsuario);
-    mostra("O seu imc é "+ imcUsuario);
+    //mostra("O seu imc é "+ imcUsuario);
+    mostra(" Olá "+nomeUsuario+", o seu imc é "+ imcUsuario);
 
     calculaIMCPrimo = calculaIMC(alturaPrimo,pesoPrimo);
 
