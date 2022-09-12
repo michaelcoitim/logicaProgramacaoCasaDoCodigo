@@ -1,11 +1,23 @@
 <script>
-    var idade = prompt("Quantos anos voce tem?");
-    var dias = idade * 365;
+    // função calcuaIdade dias vividos
+    var calcuaIdade = function(idade){
+        dias = idade * 365;
+        return dias;
+    }
+
+    // function calcula babimentos 
+    var batimentos = function(idade){
+        batidas = idade * 24 * 60 * 80;
+        return batidas;
+    }
+
+    var idadeUsuario = prompt("Quantos anos voce tem?");
+    var dias = calcuaIdade(idadeUsuario);
     document.write(" Voce viveu "+ dias + " dias de vida <br>");
 
 
-    var batimentos = idade * 24 * 60 * 80;
-    document.write("Seu coração já bateu "+batimentos+" vezes!")
+    var batimentosUsuario = batimentos(idadeUsuario);
+    document.write("Seu coração já bateu "+batimentosUsuario+" vezes!")
 
 
 
