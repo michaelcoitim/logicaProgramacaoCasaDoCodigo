@@ -1,0 +1,17 @@
+<script>
+    var primeira = function(){
+        console.log("1 Antes ");
+        segunda();
+        console.log(" 1 Depois");
+    }
+    var segunda = function(){
+        console.log(" 2 antes");
+        terceira();
+        console.log("2 Depois");
+
+    }
+    var terceira = function(){
+        console.log("3");
+    }
+    primeira();
+</script>
